@@ -1,0 +1,214 @@
+/*all*/
+
+body {
+    /*background-color: black;*/
+    margin: 0px;
+}
+
+#all {
+    width: 100%;
+    background-color: #cecece;
+}
+
+
+/*content*/
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    border: 0px solid #666;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    background-color: white;
+    font-family: monospace;
+}
+
+.content h2 {
+    font-size: 20px;
+}
+
+.content h3 {
+    font-size: 14px;
+    color: #555;
+}
+
+.content span {
+    font-size: 10px;
+}
+
+.content p {
+    text-indent: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+
+/*header*/
+
+header {
+    background-color: #696969;
+    height: 60px;
+}
+
+#navLogo {
+    margin-left: 10px;
+}
+
+#task01nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#task01nav ul {
+    float: right;
+    margin-top: 0px;
+    list-style-type: disc;
+}
+
+#task01nav li {
+    color: white;
+    margin: 10px;
+    float: left;
+    /*默认。此元素会被显示为内联元素，元素前后没有换行符，设为内敛元素后，li 的列表符号消失*/
+    /*display: inline;*/
+    color: black;
+    font-size: 12px;
+}
+
+#task01nav a {
+    /*此元素将显示为块级元素，此元素前后会带有换行符*/
+    display: block;
+    text-align: center;
+}
+
+#task01nav a:link {
+    color: #CCC;
+    text-decoration: none;
+}
+
+#task01nav a:visited {
+    color: #999;
+    text-decoration: underline;
+}
+
+#task01nav a:hover {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*imgClass*/
+
+.imgClass {
+    border: 1px solid #222;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+}
+
+.imgClass figcaption {
+    margin-bottom: 5px;
+}
+
+
+/*table*/
+
+.listTable {
+    width: 100%;
+    font-size: 95%;
+}
+
+.listTable, .listTable th, .listTable td {
+    border: 1px solid #222;
+    /*表示表格的两条边框合并为一条*/
+    border-collapse: collapse;
+    padding: 0px;
+}
+
+.listTable th {
+    color: white;
+    text-align: left;
+    background-color: #777;
+    padding: 0px;
+}
+
+.tableFooter {
+    background-color: #ccc;
+}
+
+/*aside*/
+
+#aside1 h3 {
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+}
+
+/*form*/
+
+.formDiv {
+  padding: 0px;
+  width: 100%;
+}
+form {
+  /* table 表示此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+  display: table;
+  padding: 10px;
+  width: 100%;
+}
+
+form .tableRow {
+  /* table-row 表示此元素会作为一个表格行显示（类似 <tr>）。*/
+  display: table-row;
+}
+
+form .tableRow p {
+  /* table-cell 此元素会作为一个表格单元格显示（类似 <td> 和 <th>）*/
+  display: table-cell;
+}
+
+form .tableRow p:first-child {
+  text-align: right;
+}
+
+form .prompt {
+  color: #aaa;
+  font-size: 8px;
+}
+
+form .tableRow textarea {
+width: auto;
+height: 80px;
+}
+
+/*btn*/
+
+#submitDiv {
+  width: 100%;
+  text-align: center;
+}
+
+#submit {
+  width: 80%;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  border-width: 0px;
+}
+
+/*footer*/
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: 8px;
+  height: 30px;
+  line-height: 30px;
+
+}
