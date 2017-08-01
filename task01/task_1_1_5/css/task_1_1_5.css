@@ -1,7 +1,8 @@
 /*all*/
+
 * {
-  box-sizing:border-box;
-  font-family: PingFangSC-Regular;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
 }
 
 .content {
@@ -10,24 +11,26 @@
     float: left;
 }
 
-.left {
-  margin-right: 400px;
-  /*width: 500px;
-  height: 600px;*/
-  /*float: left;*/
+.block {
+    background-color: #cecece;
 }
 
-.right {
-  width: 400px;
-  float: right;
-  height: 600px;
-  margin-right: 10px;
-  margin-top: 0px;
+#left {
+    margin-right: 400px;
 }
+
+#right {
+    width: 400px;
+    float: right;
+    height: 600px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
 
 /*block*/
 
-.block {
+.whiteBack {
     margin: 20px;
     padding: 20px;
     border: 0px solid #666;
@@ -35,6 +38,7 @@
     border-bottom-width: 2px;
     background-color: white;
     font-family: monospace;
+    clear: both;
 }
 
 .block h2 {
@@ -115,14 +119,20 @@ header {
 }
 
 
-/*imgClass*/
+/*img*/
+
+.clear {
+  clear: both;
+}
 
 .imgClass {
+    float: left;
     border: 1px solid #222;
     width: 160px;
     text-align: center;
     padding: 5px;
     margin: 15px;
+    display: block;
 }
 
 .imgClass figcaption {
@@ -155,6 +165,7 @@ header {
     background-color: #ccc;
 }
 
+
 /*aside*/
 
 #aside1 h3 {
@@ -162,68 +173,73 @@ header {
     padding-left: 10px;
 }
 
+
 /*form*/
 
 .formDiv {
-  padding: 0px;
-  width: 100%;
+    padding: 0px;
+    width: 100%;
 }
+
 form {
-  /* table 表示此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
-  display: table;
-  padding: 10px;
-  width: 100%;
+    /* table 表示此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+    display: table;
+    padding: 10px;
+    width: 100%;
 }
 
 form .tableRow {
-  /* table-row 表示此元素会作为一个表格行显示（类似 <tr>）。*/
-  display: table-row;
+    /* table-row 表示此元素会作为一个表格行显示（类似 <tr>）。*/
+    display: table-row;
 }
 
 form .tableRow p {
-  /* table-cell 此元素会作为一个表格单元格显示（类似 <td> 和 <th>）*/
-  display: table-cell;
-  font-size: 12px;
+    /* table-cell 此元素会作为一个表格单元格显示（类似 <td> 和 <th>）*/
+    display: table-cell;
+    font-size: 12px;
 }
 
 form .tableRow p:first-child {
-  text-align: right;
+    text-align: right;
 }
 
 form .prompt {
-  color: #aaa;
-  font-size: 8px;
+    color: #aaa;
+    font-size: 8px;
 }
 
 form .tableRow textarea {
-width: auto;
-height: 80px;
+    width: auto;
+    height: 80px;
 }
+
 
 /*btn*/
 
 #submitDiv {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 #submit {
-  width: 80%;
-  height: 30px;
-  background-color: blue;
-  color: white;
-  border-radius: 8px;
-  border-width: 0px;
+    width: 80%;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    border-width: 0px;
 }
+
 
 /*footer*/
 
 footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  font-size: 8px;
-  height: 30px;
-  line-height: 30px;
-  margin-bottom: 10px;
- }
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    height: 30px;
+    line-height: 30px;
+    /* 清除浮动元素格式 */
+    clear: both;
+}

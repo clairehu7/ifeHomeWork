@@ -31,12 +31,12 @@
         </nav>
     </header>
 
-    <div class="" class="content">
+    <div class="content">
         <!-- header 为语义化标签，定义文档的页眉 -->
 
-        <div class="right">
+        <div class="block" id="right">
             <!-- aside 标签定义其所处内容之外的内容，的内容可用作文章的侧栏 -->
-            <aside class="block" id="aside1">
+            <aside class="whiteBack" id="aside1">
                 <h3>这里以后是一个侧栏，这是侧栏的表题</h3>
                 <!-- <form> 标签用于为用户输入创建 HTML 表单。\
               表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。
@@ -113,9 +113,9 @@
 
         </div>
 
-        <div class="left">
+        <div class="block" id="left">
             <!-- article 标签的内容独立于文档的其余部分,代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容 -->
-            <article class="block">
+            <article class="whiteBack">
                 <h2> <a name="a2">文章一级标题</a></h2>
 
                 <h3>文章二级标题</h3>
@@ -131,7 +131,7 @@
                     <a href="https://www.baidu.com">链接</a> 这是个很长的段落 这是个很长的段落 这是个很长的段落 这是个很长的段落 这是个很长的段落 这是个很长的段落 这是个很长的段落</p>
             </article>
 
-            <article class="block">
+            <article class="whiteBack">
                 <h2> <a name="a3">另一篇文章一级标题</a> </h2>
                 <h3>文章二级标题</h3>
 
@@ -150,30 +150,32 @@
             </article>
 
             <!-- figure 标签规定独立的流内容（图片/表格/代码等）标签的内容应与主内容相关，但如果被删除，不应对文档流产生影响 -->
-            <figure class="block">
+            <figure class="whiteBack" id="imgs">
                 <h2>图片</h2>
-                <ul>
-                    <div class="imgClass">
-                        <!-- figcaption 为 figure 的标题 -->
-                        <figcaption>好看的图片</figcaption>
-                        <img src="../img/add_friend.png" alt="">
-                    </div>
-                    <div class="imgClass">
-                        <figcaption>好看的图片</figcaption>
-                        <img src="../img/add_friend.png" alt="">
-                    </div>
-                    <div class="imgClass">
-                        <figcaption>好看的图片</figcaption>
-                        <img src="../img/add_friend.png" alt="">
-                    </div>
-                    <div class="imgClass">
-                        <figcaption>好看的图片</figcaption>
-                        <img src="../img/add_friend.png" alt="">
-                    </div>
-                </ul>
+                <div class="imgClass">
+                    <!-- figcaption 为 figure 的标题 -->
+                    <figcaption>好看的图片</figcaption>
+                    <img src="../img/add_friend.png" alt="">
+                </div>
+                <div class="imgClass">
+                    <figcaption>好看的图片</figcaption>
+                    <img src="../img/add_friend.png" alt="">
+                </div>
+
+                <div class="imgClass">
+                    <figcaption>好看的图片</figcaption>
+                    <img src="../img/add_friend.png" alt="">
+                </div>
+
+                <div class="imgClass">
+                    <figcaption>好看的图片</figcaption>
+                    <img src="../img/add_friend.png" alt="">
+                </div>
+                <div class="clear">
+                </div>
             </figure>
 
-            <article class="block">
+            <article class="whiteBack">
                 <h2> <a name="a4">最后一篇文章一级标题</a> </h2>
                 <h3>文章二级标题</h3>
 
