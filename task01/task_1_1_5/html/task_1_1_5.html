@@ -31,9 +31,87 @@
         </nav>
     </header>
 
-    <div class="" id="content">
+    <div class="" class="content">
         <!-- header 为语义化标签，定义文档的页眉 -->
 
+        <div class="right">
+            <!-- aside 标签定义其所处内容之外的内容，的内容可用作文章的侧栏 -->
+            <aside class="block" id="aside1">
+                <h3>这里以后是一个侧栏，这是侧栏的表题</h3>
+                <!-- <form> 标签用于为用户输入创建 HTML 表单。\
+              表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。
+              表单还可以包含 menus、textarea、fieldset、legend 和 label 元素。
+              表单用于向服务器传输数据。 -->
+                <div class="formDiv">
+                    <form>
+                        <div class="tableRow">
+                            <!-- label 标签为 input 元素定义标注 -->
+                            <!-- "for" 属性可把 label 绑定到另外一个元素。请把 "for" 属性的值设置为相关元素的 id 属性的值。 -->
+                            <!-- 在 label 内点击文本，会聚焦到对应 id 的 input 上 -->
+                            <p> <label for="email">请输入邮箱地址：</label></p>
+                            <p> <input type="text" name="" value="" placeholder="邮箱地址" id="email"></p>
+                        </div>
+                        <div class="tableRow">
+                            <p></p>
+                            <p class="prompt">邮箱地址请按照要求格式输入</p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="pass1">请输入密码：</label></p>
+                            <p><input type="password" name="pass1" id="pass1" value="" placeholder="密码"> </p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="pass2">请重复输入密码：</label></p>
+                            <p><input type="password" name="" value="" placeholder="密码" id="pass2" name="pass2"></p>
+                        </div>
+                        <div class="tableRow">
+                            <p></p>
+                            <p class="prompt">密码为6-16位的英文数字</p>
+                        </div>
+
+                        <div class="tableRow">
+                            <p>性别</p>
+                            <p>
+                                <label for=""><input type="radio" name="gender" value="">男</label>
+                                <label for=""><input type="radio" name="gender" value="" checked>女</label>
+                            </p>
+                        </div>
+
+                        <div class="tableRow">
+                            <p>城市</p>
+                            <p>
+                                <select class="" name="city">
+                              <option value="">北京</option>
+                              <option value="">重庆</option>
+                              <option value="" selected>成都</option>
+                            </select>
+                            </p>
+                        </div>
+
+                        <div class="tableRow">
+                            <p>爱好</p>
+                            <p>
+                                <label><input type="checkbox" name="" value="运动">运动</label>
+                                <label><input type="checkbox" name="" value="艺术" checked>艺术</label>
+                                <label><input type="checkbox" name="" value="科学">科学</label>
+                            </p>
+                        </div>
+
+                        <div class="tableRow">
+                            <p>个人描述</p>
+                            <p>
+                                <textarea name="name" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="submitDiv">
+                    <button type="button" name="submit" id="submit">确认提交</button>
+                </div>
+
+            </aside>
+
+        </div>
 
         <div class="left">
             <!-- article 标签的内容独立于文档的其余部分,代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容 -->
@@ -142,84 +220,7 @@
             </article>
         </div>
 
-        <div class="right">
-            <!-- aside 标签定义其所处内容之外的内容，的内容可用作文章的侧栏 -->
-            <aside class="block" id="aside1">
-                <h3>这里以后是一个侧栏，这是侧栏的表题</h3>
-                <!-- <form> 标签用于为用户输入创建 HTML 表单。\
-              表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。
-              表单还可以包含 menus、textarea、fieldset、legend 和 label 元素。
-              表单用于向服务器传输数据。 -->
-                <div class="formDiv">
-                    <form>
-                        <div class="tableRow">
-                            <!-- label 标签为 input 元素定义标注 -->
-                            <!-- "for" 属性可把 label 绑定到另外一个元素。请把 "for" 属性的值设置为相关元素的 id 属性的值。 -->
-                            <!-- 在 label 内点击文本，会聚焦到对应 id 的 input 上 -->
-                            <p> <label for="email">请输入邮箱地址：</label></p>
-                            <p> <input type="text" name="" value="" placeholder="邮箱地址" id="email"></p>
-                        </div>
-                        <div class="tableRow">
-                            <p></p>
-                            <p class="prompt">邮箱地址请按照要求格式输入</p>
-                        </div>
-                        <div class="tableRow">
-                            <p><label for="pass1">请输入密码：</label></p>
-                            <p><input type="password" name="pass1" id="pass1" value="" placeholder="密码"> </p>
-                        </div>
-                        <div class="tableRow">
-                            <p><label for="pass2">请重复输入密码：</label></p>
-                            <p><input type="password" name="" value="" placeholder="密码" id="pass2" name="pass2"></p>
-                        </div>
-                        <div class="tableRow">
-                            <p></p>
-                            <p class="prompt">密码为6-16位的英文数字</p>
-                        </div>
 
-                        <div class="tableRow">
-                            <p>性别</p>
-                            <p>
-                                <label for=""><input type="radio" name="gender" value="">男</label>
-                                <label for=""><input type="radio" name="gender" value="" checked>女</label>
-                            </p>
-                        </div>
-
-                        <div class="tableRow">
-                            <p>城市</p>
-                            <p>
-                                <select class="" name="city">
-                              <option value="">北京</option>
-                              <option value="">重庆</option>
-                              <option value="" selected>成都</option>
-                            </select>
-                            </p>
-                        </div>
-
-                        <div class="tableRow">
-                            <p>爱好</p>
-                            <p>
-                                <label><input type="checkbox" name="" value="运动">运动</label>
-                                <label><input type="checkbox" name="" value="艺术" checked>艺术</label>
-                                <label><input type="checkbox" name="" value="科学">科学</label>
-                            </p>
-                        </div>
-
-                        <div class="tableRow">
-                            <p>个人描述</p>
-                            <p>
-                                <textarea name="name" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
-                            </p>
-                        </div>
-                    </form>
-                </div>
-
-                <div id="submitDiv">
-                    <button type="button" name="submit" id="submit">确认提交</button>
-                </div>
-
-            </aside>
-
-        </div>
         <!-- footer 标签定义文档或节的页脚。 -->
         <!-- 页脚通常包含文档的作者、版权信息、使用条款链接、联系信息等等。 -->
 
